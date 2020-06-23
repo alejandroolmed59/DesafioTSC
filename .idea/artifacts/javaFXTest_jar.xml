@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="javaFXTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javaFXTest_jar</output-path>
+    <root id="archive" name="javaFXTest.jar">
+      <element id="module-output" name="javaFXTest" />
+    </root>
+  </artifact>
+</component>
