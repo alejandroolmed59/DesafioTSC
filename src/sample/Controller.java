@@ -51,16 +51,17 @@ public class Controller {
     void anterior(ActionEvent event) {
         rotar(btanterior, -360);
         contador--;
+        if(contador<0) contador=0;
         Image img = new Image(this.getClass().getResourceAsStream(lista.get(contador).getImgUrl()));
         texto1.setText(lista.get(contador).getTitulo());
         Img1.setImage(img);
     }
     private void rotar(Button btn, int angle){
-        RotateTransition rt = new RotateTransition(Duration.seconds(2), btn);
+        RotateTransition rt = new RotateTransition(Duration.seconds(1), btn);
         rt.setAutoReverse(true);
         rt.setByAngle(angle);
         rt.setDelay(Duration.seconds(0));
-        rt.setRate(2);
+      //  rt.setRate(2);
        // rt.setCycleCount(18);
         rt.play();
     }
