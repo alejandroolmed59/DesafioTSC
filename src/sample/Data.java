@@ -60,8 +60,7 @@ public class Data {
         lista.add(new Data("/sample/Images/definiendo/defF1_1.jpg", "Matriz f1"));
         lista.add(new Data("/sample/Images/definiendo/defF1_2.jpg", "Matriz f1 - definiendo"));
         lista.add(new Data("/sample/Images/definiendo/defF2.jpg", "Matriz f2"));
-
-        //lista.add(new Data("/sample/Images/1.gif", "Bonus track"));
+        lista.add(new Data("/sample/Images/e.gif", "Ensamblaje!"));
         return lista;
     }
 }
