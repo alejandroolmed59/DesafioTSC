@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application{
     //Button button;
@@ -13,8 +14,10 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception{
         VBox mainVbox = FXMLLoader.load(getClass().getResource("Pantallas/ejemplo.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Desafio de programacion");
         primaryStage.setScene(new Scene(mainVbox));
+
+        //primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
     }
 
