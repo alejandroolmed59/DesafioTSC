@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="rootPanel" fx:id="rootPanel" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="723.0" prefWidth="1334.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="but1" layoutX="697.0" layoutY="715.0" mnemonicParsing="false" onAction="#nextPage" text="Siguiente" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="0.3" endY="0.5428571428571429" startX="0.052380952380952375" startY="0.29523809523809524">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#000dff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <BorderPane id="mainpanel" fx:id="mainBorderPane" layoutX="47.0" prefHeight="682.0" prefWidth="1274.0">
+               <center>
+                  <ImageView id="img1" fx:id="Img1" fitHeight="686.0" fitWidth="1300.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../Images/1.gif" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

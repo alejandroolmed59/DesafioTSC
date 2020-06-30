@@ -28,7 +28,7 @@ public class Controller {
         contador++;
         System.out.println(contador);
         //VBox sc2 = FXMLLoader.load(getClass().getResource("pag2.fxml"));
-        Image img = new Image(this.getClass().getResourceAsStream("/sample/Images/"+contador+".png"));
+        Image img = new Image(this.getClass().getResourceAsStream("/sample/Images/"+contador+".jpg"));
         Img1.setImage(img);
         //mainBorderPane.setCenter(sc2);
     }
