@@ -65,6 +65,7 @@ public class Data {
         lista.add(new Data("/sample/Images/condi.jpg", "Condiciones a aplicar"));
         lista.add(new Data("/sample/Images/aplicandoCondiciones.gif", "Aplicando condiciones"));
         lista.add(new Data("/sample/Images/final.jpg", "SISTEMA FINAL"));
+        lista.add(new Data("/sample/Images/fini.jpg", "Gracias!"));
         return lista;
     }
 }

@@ -9,8 +9,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application{
-    //Button button;
-    //Image img2 = new Image(getClass().getResourceAsStream("/sample/Images/2.jpg"));
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
