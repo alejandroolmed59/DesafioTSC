@@ -2,6 +2,8 @@
 
 package sample;
 
+        import javafx.animation.RotateTransition;
+        import javafx.animation.Timeline;
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
         import javafx.fxml.FXMLLoader;
@@ -13,6 +15,7 @@ package sample;
         import javafx.scene.control.TextField;
         import javafx.scene.image.Image;
         import javafx.stage.Stage;
+        import javafx.util.Duration;
 
         import java.io.IOException;
 
@@ -37,6 +40,7 @@ public class Controller2 {
     @FXML
     public void initialize() {
         labelPregunta.setText(dato.getTitulo());
+        rotar(texto1, 360);
     }
 
     @FXML
@@ -55,11 +59,18 @@ public class Controller2 {
     }
     @FXML
     void checkAnswer(ActionEvent event) {
-        if(tfRespuesta.getText().equals(dato.getRespuesta())){
-            texto1.setText("Correcto!!");
+        if(tfRespuesta.getText().toLowerCase().equals(dato.getRespuesta())){
+            labelPregunta.setText("Correcto!!");
         }else{
-            texto1.setText("Incorrecto");
+            labelPregunta.setText("Incorrecto, La respuesta es: "+dato.getRespuesta());
         }
     }
 
+    private void rotar(Node btn, int angle){
+        RotateTransition rt = new RotateTransition(Duration.seconds(1), btn);
+        rt.setAutoReverse(true);
+        rt.setByAngle(angle);
+        rt.setCycleCount(Timeline.INDEFINITE);
+        rt.play();
+    }
 }

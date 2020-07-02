@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="819.0" prefWidth="1374.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+<children>
+      <Button fx:id="btNext" layoutX="840.0" layoutY="751.0" mnemonicParsing="false" onAction="#next" prefHeight="39.0" prefWidth="150.0" styleClass="btn btn-primary" stylesheets="@bootstrap.css" text="Continuar" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="0.3" endY="0.5428571428571429" startX="0.052380952380952375" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#000dff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btCheck" layoutX="413.0" layoutY="751.0" mnemonicParsing="false" onAction="#checkAnswer" prefHeight="39.0" prefWidth="150.0" styleClass="btn btn-danger" stylesheets="@bootstrap.css" text="Responder">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endY="0.014285714285714346" startX="0.28095238095238095" startY="0.33333333333333337">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="0.789469526405182" />
+                  <Stop color="BLACK" offset="0.9770114942528731" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="texto1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="14.0" layoutY="190.0" prefHeight="47.0" prefWidth="1278.0" text="Pop quiz momento!" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Cooper Black" size="39.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8238095238095238" endY="0.8" startX="0.2523809523809524" startY="0.09523809523809523">
+               <stops>
+                  <Stop color="#ebc507" />
+                  <Stop color="#ebc507" offset="0.007662835249042145" />
+                  <Stop color="#07eb4f" offset="0.4398230438045581" />
+                  <Stop color="#2107eb" offset="0.6634672354544374" />
+                  <Stop color="#de07eb" offset="0.8746691946123156" />
+                  <Stop color="#eb3205" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="labelPregunta" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="14.0" layoutY="336.0" prefHeight="47.0" prefWidth="1278.0" text="pregunta" textAlignment="CENTER" textFill="#bf0309">
+         <font>
+            <Font name="Cooper Black" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfRespuesta" alignment="CENTER" layoutX="191.0" layoutY="455.0" prefHeight="65.0" prefWidth="909.0" promptText="Tu respuesta">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </TextField>
+</children>
+</AnchorPane>

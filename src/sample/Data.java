@@ -66,14 +66,15 @@ public class Data {
         lista.add(new Data("/sample/Images/dominio.jpg", "Dominio"));
         lista.add(new Data("/sample/Images/dominio2.jpg", "Dominio (2do angulo)"));
         lista.add(new Data("/sample/Images/malla.jpg", "La malla!"));
-        lista.add(new Data("", "Cuanto esssssss?", "20"));
         lista.add(new Data("/sample/Images/tablacon.jpg", "La tabla de conectividades!"));
+        lista.add(new Data("", "Cuantos nodos tiene la malla :0?", "6"));
         lista.add(new Data("/sample/Images/modelo.jpg", "El modelo"));
         lista.add(new Data("/sample/Images/mef.jpg", "Metodo de los elementos finitos"));
         lista.add(new Data("/sample/Images/paso1.jpg", "Paso 1 - Localizacion"));
         lista.add(new Data("/sample/Images/paso2.jpg", "Paso 2 - Interpolacion"));
         lista.add(new Data("/sample/Images/paso3.jpg", "Paso 3 - Aproximacion del modelo"));
         lista.add(new Data("/sample/Images/paso4.jpg", "Paso 4 - Metodo de los residuos ponderados"));
+        lista.add(new Data("", "Como se llama el segundo paso del MEF :0?", "interpolacion"));
         lista.add(new Data("/sample/Images/paso5.jpg", "Paso 5 - Metodo de Galerkin(modificado)"));
         lista.add(new Data("/sample/Images/paso6D.jpg", "Paso 6 - Integracion por partes - Matriz D"));
         lista.add(new Data("/sample/Images/paso6E.jpg", "Paso 6 - Integracion por partes - Matriz E"));
@@ -96,6 +97,7 @@ public class Data {
         lista.add(new Data("/sample/Images/e.gif", "Ensamblaje del sistema global!"));
         lista.add(new Data("/sample/Images/condi.jpg", "Condiciones a aplicar"));
         lista.add(new Data("/sample/Images/aplicandoCondiciones.gif", "Aplicando condiciones"));
+        lista.add(new Data("", "Entonces... Que dimension es la M global :0?", "10x10"));
         lista.add(new Data("/sample/Images/final.jpg", "SISTEMA FINAL"));
         lista.add(new Data("/sample/Images/fini.jpg", "Gracias!"));
         return lista;

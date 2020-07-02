@@ -28,7 +28,7 @@
             </LinearGradient>
          </textFill>
       </Button>
-      <Button fx:id="btCheck" layoutX="413.0" layoutY="751.0" mnemonicParsing="false" onAction="#checkAnswer" prefHeight="39.0" prefWidth="150.0" styleClass="btn btn-danger" stylesheets="@bootstrap.css" text="Verificar">
+      <Button fx:id="btCheck" layoutX="413.0" layoutY="751.0" mnemonicParsing="false" onAction="#checkAnswer" prefHeight="39.0" prefWidth="150.0" styleClass="btn btn-danger" stylesheets="@bootstrap.css" text="Responder">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -46,15 +46,19 @@
             </LinearGradient>
          </textFill>
       </Button>
-      <Label fx:id="texto1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="14.0" layoutY="190.0" prefHeight="47.0" prefWidth="1278.0" text="Pop quiz!" textAlignment="CENTER" underline="true">
+      <Label fx:id="texto1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="14.0" layoutY="190.0" prefHeight="47.0" prefWidth="1278.0" text="Pop quiz momento!" textAlignment="CENTER" underline="true">
          <font>
-            <Font name="Cooper Black" size="32.0" />
+            <Font name="Cooper Black" size="39.0" />
          </font>
          <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
+            <LinearGradient endX="0.8238095238095238" endY="0.8" startX="0.2523809523809524" startY="0.09523809523809523">
                <stops>
-                  <Stop color="#1e29eb" />
-                  <Stop color="#eb070e" offset="1.0" />
+                  <Stop color="#ebc507" />
+                  <Stop color="#ebc507" offset="0.007662835249042145" />
+                  <Stop color="#07eb4f" offset="0.4398230438045581" />
+                  <Stop color="#2107eb" offset="0.6634672354544374" />
+                  <Stop color="#de07eb" offset="0.8746691946123156" />
+                  <Stop color="#eb3205" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>

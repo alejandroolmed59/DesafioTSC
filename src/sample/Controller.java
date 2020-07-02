@@ -58,11 +58,11 @@ public class Controller {
     @FXML
     void siguiente(ActionEvent event) throws Exception {
         fadear(texto1, 1.5);
-        fadear(Img1, 2.5);
+        fadear(Img1, 3);
         rotar(btsiguiente, 360);
         if(Data.getContador()<lista.size()-1) Data.sumarContador();;
         System.out.println(Data.getContador());
-        if(Data.getContador()==4){
+        if(Data.getContador()==5 || Data.getContador()==12 || Data.getContador()==35){
             cambiarStage(event);
             return;
         }
@@ -75,11 +75,11 @@ public class Controller {
     @FXML
     void anterior(ActionEvent event) throws IOException {
         fadear(texto1, 1.5);
-        fadear(Img1, 2.5);
+        fadear(Img1, 3);
         rotar(btanterior, -360);
         Data.restarContador();
        if(Data.getContador()<0) Data.setContador(0);
-       if(Data.getContador()==4){
+       if(Data.getContador()==5 || Data.getContador()==12 || Data.getContador()==35){
            cambiarStage(event);
            return;
        }
