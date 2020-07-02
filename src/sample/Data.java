@@ -4,12 +4,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Data {
+    private static int contador=0;
     private String imgUrl;
     private String titulo;
+    private String respuesta;
 
     public Data(String imgUrl, String titulo) {
         this.imgUrl = imgUrl;
         this.titulo = titulo;
+    }
+
+    public String getRespuesta() {
+        return respuesta;
+    }
+
+    public void setRespuesta(String respuesta) {
+        this.respuesta = respuesta;
+    }
+
+    public Data(String imgUrl, String titulo, String respuesta) {
+        this.imgUrl = imgUrl;
+        this.titulo = titulo;
+        this.respuesta = respuesta;
+    }
+
+    public static int getContador() {
+        return contador;
+    }
+
+    public static void sumarContador() {
+        contador++;
+    }
+
+    public static void setContador(int contador) {
+        Data.contador = contador;
+    }
+
+    public static void restarContador() {
+        contador--;
     }
 
     public String getImgUrl() {
@@ -31,10 +63,10 @@ public class Data {
     public static List<Data> getDatos(){
         List<Data> lista= new ArrayList<>();
         lista.add(new Data("/sample/Images/bienvenido.jpg", "Bienvenido!"));
-
         lista.add(new Data("/sample/Images/dominio.jpg", "Dominio"));
         lista.add(new Data("/sample/Images/dominio2.jpg", "Dominio (2do angulo)"));
         lista.add(new Data("/sample/Images/malla.jpg", "La malla!"));
+        lista.add(new Data("", "Cuanto esssssss?", "20"));
         lista.add(new Data("/sample/Images/tablacon.jpg", "La tabla de conectividades!"));
         lista.add(new Data("/sample/Images/modelo.jpg", "El modelo"));
         lista.add(new Data("/sample/Images/mef.jpg", "Metodo de los elementos finitos"));
