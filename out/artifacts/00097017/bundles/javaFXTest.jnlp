@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javaFXTest.jnlp">
+  <information>
+    <title>Simulador del Simulador</title>
+    <vendor>Unknown</vendor>
+    <description>00097017</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="javaFXTest.jar" size="12540172" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="00097017" />
+  <update check="background"/>
+</jnlp>
